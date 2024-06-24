@@ -1,0 +1,218 @@
+{
+  "intents": [
+    {
+      "tag": "name",
+      "patterns": ["name", "Who are you", "May I know your name", "name"],
+      "responses": ["His name is Pol Maynard Imbing."]
+    },
+    {
+      "tag": "skills",
+      "patterns": [
+        "What are your skills",
+        "What can you do",
+        "Tell me your skills"
+      ],
+      "responses": [
+        "He is skilled in React.js, JavaScript, TypeScript, Node.js, Nest.js, HTML/CSS, and various front-end technologies."
+      ]
+    },
+    {
+      "tag": "techStack",
+      "patterns": [
+        "what is you're tech stack",
+        "What technologies do you use",
+        "Tell me about your tech stack",
+        "What libraries and frameworks do you use",
+        "tech Stack",
+        "techStack"
+      ],
+      "responses": [
+        "He uses React.js, Redux, Tailwind CSS, Styled Components, Material-UI, Ant Design for frontend; Node.js, NestJS, TypeORM, and GraphQL for backend; and MySQL, MongoDB, and PostgreSQL for databases."
+      ]
+    },
+    {
+      "tag": "experience",
+      "patterns": [
+        "Tell me about your work experience.",
+        "What companies have you worked for",
+        "What is your professional background"
+      ],
+      "responses": [
+        "He has worked as a Senior React Developer at Yempo - Your Employees Offshore and New York Global Consultants Inc., focusing on front-end architecture and development. Previously, he was an Advance App Engineering Analyst at Accenture Phils, Inc., contributing to API development using TypeScript and Nest.js. He also has experience as a Front-end Web Developer at Gold Bell Financial Service, where he developed applications using React.js, Axios, and Styled Components. Earlier in his career, he worked as a Full Stack Web Developer at Radio Wealth Finance Company, Inc., and as an Android Developer at Tektos Ecosystems Limited and Infotouch."
+      ]
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "What is your educational background",
+        "Where did you study",
+        "Tell me about your degree",
+        "What is your Education",
+        "education"
+      ],
+      "responses": [
+        "He holds a Bachelor's degree and has a strong foundation in IT and business, with a focus on web development."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you",
+        "What is your email",
+        "Do you have a website",
+        "email",
+        "contact"
+      ],
+      "responses": [
+        "You can reach him at uraman2000@gmail.com or through his website www.polimbing.dev. Or you can call him at +63 960 211 2123."
+      ]
+    },
+    {
+      "tag": "projects",
+      "patterns": [
+        "Tell me about your projects",
+        "What projects have you worked on",
+        "Can you describe a project you've worked on",
+        "projects"
+      ],
+      "responses": [
+        "He has worked on a variety of projects ranging from developing user-facing applications using React.js to building REST APIs with Node.js and implementing custom UI components for Android applications."
+      ]
+    },
+    {
+      "tag": "interests",
+      "patterns": [
+        "What are your interests",
+        "What do you enjoy doing",
+        "Tell me about your hobbies",
+        "interests"
+      ],
+      "responses": [
+        "He enjoys exploring new technologies, solving complex problems, and contributing to open-source projects. In his free time, he likes reading tech blogs and experimenting with new coding techniques."
+      ]
+    },
+    {
+      "tag": "goals",
+      "patterns": [
+        "What are your career goals",
+        "Where do you see yourself in the future",
+        "What are you aiming to achieve",
+        "goal"
+      ],
+      "responses": [
+        "His career goals include advancing his skills in web development, taking on more leadership roles, and contributing to innovative projects that make a positive impact."
+      ]
+    },
+    {
+      "tag": "achievements",
+      "patterns": [
+        "What are your achievements",
+        "Tell me about your accomplishments",
+        "What have you achieved in your career",
+        "achievements"
+      ],
+      "responses": [
+        "He has been recognized for his contributions to projects that have improved user experience and efficiency. He takes pride in delivering high-quality solutions and exceeding client expectations."
+      ]
+    },
+    {
+      "tag": "strengths",
+      "patterns": [
+        "What are your strengths",
+        "Tell me about your strengths",
+        "What makes you a valuable team member",
+        "strengths"
+      ],
+      "responses": [
+        "His strengths lie in his technical expertise in web development, his ability to adapt to new technologies quickly, and his strong problem-solving skills. He is also known for his effective communication and teamwork."
+      ]
+    },
+    {
+      "tag": "future",
+      "patterns": [
+        "Where do you see yourself in 5 years",
+        "What are your future plans",
+        "What is your vision for the future",
+        "future"
+      ],
+      "responses": [
+        "In the next five years, he aims to become a recognized leader in the field of web development, contributing to cutting-edge projects and mentoring the next generation of developers."
+      ]
+    },
+    {
+      "tag": "yempo_project",
+      "patterns": [
+        "What projects did you work on at Yempo",
+        "Tell me about your work at Yempo",
+        "Describe the Compliance Station® Series project at Yempo",
+        "yempo"
+      ],
+      "responses": [
+        "At Yempo, he worked on the Compliance Station® Series, which addresses risk assessment challenges faced by financial institutions. This platform enhances data acquisition, preparation, and risk assessment to combat money laundering and terrorist financing."
+      ]
+    },
+    {
+      "tag": "accenture_project",
+      "patterns": [
+        "What projects did you work on at Accenture",
+        "Tell me about your work at Accenture",
+        "how about in accenture",
+        "accenture"
+      ],
+      "responses": [
+        "At Accenture, he contributed to the development of an airline ticketing/booking website. This project focused on providing users with a seamless booking experience, integrating payment gateways, and ensuring real-time flight information updates."
+      ]
+    },
+    {
+      "tag": "nygci_project",
+      "patterns": [
+        "What projects did you work on at NYGCI",
+        "Tell me about your work at NYGCI",
+        "Describe the e-commerce website project at NYGCI",
+        "NYGCI",
+        "New York Global Consultants Inc.",
+        "nygci",
+        "how about in nygci"
+      ],
+      "responses": [
+        "At NYGCI, he worked on developing an e-commerce website specializing in eyewear, the website is Clearly.ca. The project involved creating a user-friendly interface for browsing eyewear products, integrating secure payment gateways, and ensuring a seamless shopping experience."
+      ]
+    },
+    {
+      "tag": "development_process",
+      "patterns": [
+        "How did you develop this chatbot",
+        "What technologies did you use to create this chatbot",
+        "Explain the development process of this chatbot"
+      ],
+      "responses": [
+        "SAM was developed using TensorFlow.js for natural language processing and model training. The backend is built with Node.js and Express for handling API requests. Data is stored in JSON format, and intents are classified using a machine learning model trained on user queries."
+      ]
+    },
+    {
+      "tag": "bot_name",
+      "patterns": [
+        "Where did you get the name SAM",
+        "Why is your name SAM",
+        "Tell me about your name SAM",
+        "How did you get the name SAM"
+      ],
+      "responses": [
+        "I am inspired by all of the AI nowadays, and my creator is a fan of Iron Man from his college days. He imagined me as his own Jarvis, but a little less intelligent than Jarvis or Friday. As for the name Sam, SAM is the acronym of his daughter's name."
+      ]
+    },
+    {
+      "tag": "purpose",
+      "patterns": [
+        "What is your purpose",
+        "Why were you created",
+        "Tell me your purpose",
+        "What are you for",
+        "what's your purpose?"
+      ],
+      "responses": [
+        "My purpose is to assist you with information about Pol Maynard Imbing's skills, experience, projects, and more. Feel free to ask me anything related to Pol's professional background!"
+      ]
+    }
+  ]
+}
