@@ -2,6 +2,8 @@ const express = require("express")
 const tf = require("@tensorflow/tfjs-node")
 const fs = require("fs").promises
 const cors = require("cors")
+require("dotenv").config() // Load environment variables
+
 const app = express()
 const PORT = process.env.PORT || 3000
 
@@ -59,7 +61,7 @@ function classifyQuery(query) {
   }
 }
 
-const whitelist = ["http://127.0.0.1:5173", "http://localhost:3000"] // Add your allowed origins here
+const whitelist = process.env.CORS_WHITE_LIST.split(",") // Add your allowed origins here
 
 // Configure CORS options
 const corsOptions = {
@@ -78,8 +80,23 @@ const corsOptions = {
 // Apply the CORS middleware to all routes
 app.use(cors(corsOptions))
 
+// Middleware to check API key
+function checkApiKey(req, res, next) {
+  const apiKey = req.headers["x-api-key"]
+
+  if (!apiKey) {
+    return res.status(403).json({ error: "No API key provided" })
+  }
+
+  if (apiKey !== process.env.API_KEY) {
+    return res.status(403).json({ error: "Invalid API key" })
+  }
+
+  next()
+}
+
 // API endpoint for model inference and intent classification
-app.post("/predict", express.json(), async (req, res) => {
+app.post("/predict", checkApiKey, express.json(), async (req, res) => {
   try {
     const { question } = req.body
 
@@ -99,6 +116,7 @@ app.post("/predict", express.json(), async (req, res) => {
     res.status(500).json({ error: "Prediction failed" })
   }
 })
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`)

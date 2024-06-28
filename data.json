@@ -2,7 +2,21 @@
   "intents": [
     {
       "tag": "name",
-      "patterns": ["name", "Who are you", "May I know your name", "name"],
+      "patterns": [
+        "name",
+        "Who are you",
+        "May I know your name",
+        "What's your name",
+        "What do people call you",
+        "Your name",
+        "Identify yourself",
+        "Who is this",
+        "Introduce yourself",
+        "Can you tell me your name",
+        "Who are you called",
+        "What should I call you",
+        "What is your name"
+      ],
       "responses": ["His name is Pol Maynard Imbing."]
     },
     {
@@ -10,7 +24,14 @@
       "patterns": [
         "What are your skills",
         "What can you do",
-        "Tell me your skills"
+        "Tell me your skills",
+        "What are you good at",
+        "List your skills",
+        "Your skills",
+        "Your abilities",
+        "What are your capabilities",
+        "What are your strengths in technology",
+        "What technologies are you proficient in"
       ],
       "responses": [
         "He is skilled in React.js, JavaScript, TypeScript, Node.js, Nest.js, HTML/CSS, and various front-end technologies."
@@ -19,12 +40,17 @@
     {
       "tag": "techStack",
       "patterns": [
-        "what is you're tech stack",
+        "What is your tech stack",
         "What technologies do you use",
         "Tell me about your tech stack",
         "What libraries and frameworks do you use",
-        "tech Stack",
-        "techStack"
+        "Tech Stack",
+        "TechStack",
+        "Which technologies do you prefer",
+        "Describe your tech stack",
+        "What tools do you use for development",
+        "Your tech stack",
+        "Which frameworks do you work with"
       ],
       "responses": [
         "He uses React.js, Redux, Tailwind CSS, Styled Components, Material-UI, Ant Design for frontend; Node.js, NestJS, TypeORM, and GraphQL for backend; and MySQL, MongoDB, and PostgreSQL for databases."
@@ -33,9 +59,16 @@
     {
       "tag": "experience",
       "patterns": [
-        "Tell me about your work experience.",
+        "Tell me about your work experience",
         "What companies have you worked for",
-        "What is your professional background"
+        "What is your professional background",
+        "Describe your work experience",
+        "What have you done in your career",
+        "Tell me about your job history",
+        "Your work experience",
+        "Where have you worked",
+        "Describe your professional journey",
+        "Career history"
       ],
       "responses": [
         "He has worked as a Senior React Developer at Yempo - Your Employees Offshore and New York Global Consultants Inc., focusing on front-end architecture and development. Previously, he was an Advance App Engineering Analyst at Accenture Phils, Inc., contributing to API development using TypeScript and Nest.js. He also has experience as a Front-end Web Developer at Gold Bell Financial Service, where he developed applications using React.js, Axios, and Styled Components. Earlier in his career, he worked as a Full Stack Web Developer at Radio Wealth Finance Company, Inc., and as an Android Developer at Tektos Ecosystems Limited and Infotouch."
@@ -47,8 +80,14 @@
         "What is your educational background",
         "Where did you study",
         "Tell me about your degree",
-        "What is your Education",
-        "education"
+        "What is your education",
+        "Education",
+        "Your academic background",
+        "What did you study",
+        "Which university did you attend",
+        "Describe your educational qualifications",
+        "Academic qualifications",
+        "Your degree"
       ],
       "responses": [
         "He holds a Bachelor's degree and has a strong foundation in IT and business, with a focus on web development."
@@ -60,8 +99,16 @@
         "How can I contact you",
         "What is your email",
         "Do you have a website",
-        "email",
-        "contact"
+        "Email",
+        "Contact",
+        "Your contact information",
+        "How do I reach you",
+        "What is your contact info",
+        "Give me your contact details",
+        "How can I get in touch with you",
+        "Can you share your email",
+        "Do you have a phone number",
+        "How to contact"
       ],
       "responses": [
         "You can reach him at uraman2000@gmail.com or through his website www.polimbing.dev. Or you can call him at +63 960 211 2123."
@@ -73,7 +120,13 @@
         "Tell me about your projects",
         "What projects have you worked on",
         "Can you describe a project you've worked on",
-        "projects"
+        "Projects",
+        "Your projects",
+        "Describe your past projects",
+        "What kind of projects have you done",
+        "Talk about your projects",
+        "What are some of your projects",
+        "Example of your projects"
       ],
       "responses": [
         "He has worked on a variety of projects ranging from developing user-facing applications using React.js to building REST APIs with Node.js and implementing custom UI components for Android applications."
@@ -85,7 +138,15 @@
         "What are your interests",
         "What do you enjoy doing",
         "Tell me about your hobbies",
-        "interests"
+        "Interests",
+        "Hobbies",
+        "What do you like to do in your free time",
+        "Your interests",
+        "What are your passions",
+        "How do you spend your leisure time",
+        "Things you enjoy doing",
+        "What are your personal interests",
+        "Any hobbies"
       ],
       "responses": [
         "He enjoys exploring new technologies, solving complex problems, and contributing to open-source projects. In his free time, he likes reading tech blogs and experimenting with new coding techniques."
@@ -97,7 +158,14 @@
         "What are your career goals",
         "Where do you see yourself in the future",
         "What are you aiming to achieve",
-        "goal"
+        "Goal",
+        "Your career goals",
+        "What are your professional goals",
+        "What are your ambitions",
+        "Future goals",
+        "What do you want to accomplish",
+        "Your objectives",
+        "Long-term goals"
       ],
       "responses": [
         "His career goals include advancing his skills in web development, taking on more leadership roles, and contributing to innovative projects that make a positive impact."
@@ -109,7 +177,14 @@
         "What are your achievements",
         "Tell me about your accomplishments",
         "What have you achieved in your career",
-        "achievements"
+        "Achievements",
+        "Your accomplishments",
+        "Describe your achievements",
+        "What have you accomplished",
+        "Career achievements",
+        "Notable achievements",
+        "What are your successes",
+        "Your milestones"
       ],
       "responses": [
         "He has been recognized for his contributions to projects that have improved user experience and efficiency. He takes pride in delivering high-quality solutions and exceeding client expectations."
@@ -121,7 +196,13 @@
         "What are your strengths",
         "Tell me about your strengths",
         "What makes you a valuable team member",
-        "strengths"
+        "Strengths",
+        "Your strengths",
+        "What are your strong points",
+        "Describe your strengths",
+        "Your key strengths",
+        "What do you excel at",
+        "What are your top skills"
       ],
       "responses": [
         "His strengths lie in his technical expertise in web development, his ability to adapt to new technologies quickly, and his strong problem-solving skills. He is also known for his effective communication and teamwork."
@@ -133,7 +214,13 @@
         "Where do you see yourself in 5 years",
         "What are your future plans",
         "What is your vision for the future",
-        "future"
+        "Future",
+        "Your future plans",
+        "Where are you headed",
+        "Describe your future aspirations",
+        "What are your long-term plans",
+        "Future ambitions",
+        "What do you aim to do in the future"
       ],
       "responses": [
         "In the next five years, he aims to become a recognized leader in the field of web development, contributing to cutting-edge projects and mentoring the next generation of developers."
@@ -145,7 +232,12 @@
         "What projects did you work on at Yempo",
         "Tell me about your work at Yempo",
         "Describe the Compliance Station® Series project at Yempo",
-        "yempo"
+        "Yempo",
+        "Your role at Yempo",
+        "What did you do at Yempo",
+        "Work experience at Yempo",
+        "Projects at Yempo",
+        "Your contribution at Yempo"
       ],
       "responses": [
         "At Yempo, he worked on the Compliance Station® Series, which addresses risk assessment challenges faced by financial institutions. This platform enhances data acquisition, preparation, and risk assessment to combat money laundering and terrorist financing."
@@ -156,8 +248,13 @@
       "patterns": [
         "What projects did you work on at Accenture",
         "Tell me about your work at Accenture",
-        "how about in accenture",
-        "accenture"
+        "How about in Accenture",
+        "Accenture",
+        "Your role at Accenture",
+        "What did you do at Accenture",
+        "Work experience at Accenture",
+        "Projects at Accenture",
+        "Your contribution at Accenture"
       ],
       "responses": [
         "At Accenture, he contributed to the development of an airline ticketing/booking website. This project focused on providing users with a seamless booking experience, integrating payment gateways, and ensuring real-time flight information updates."
@@ -171,8 +268,13 @@
         "Describe the e-commerce website project at NYGCI",
         "NYGCI",
         "New York Global Consultants Inc.",
-        "nygci",
-        "how about in nygci"
+        "NYGCI",
+        "How about in NYGCI",
+        "Your role at NYGCI",
+        "What did you do at NYGCI",
+        "Work experience at NYGCI",
+        "Projects at NYGCI",
+        "Your contribution at NYGCI"
       ],
       "responses": [
         "At NYGCI, he worked on developing an e-commerce website specializing in eyewear, the website is Clearly.ca. The project involved creating a user-friendly interface for browsing eyewear products, integrating secure payment gateways, and ensuring a seamless shopping experience."
@@ -183,7 +285,12 @@
       "patterns": [
         "How did you develop this chatbot",
         "What technologies did you use to create this chatbot",
-        "Explain the development process of this chatbot"
+        "Explain the development process of this chatbot",
+        "How was this chatbot made",
+        "What tools did you use for this chatbot",
+        "Chatbot development process",
+        "Technologies behind this chatbot",
+        "How was SAM built"
       ],
       "responses": [
         "SAM was developed using TensorFlow.js for natural language processing and model training. The backend is built with Node.js and Express for handling API requests. Data is stored in JSON format, and intents are classified using a machine learning model trained on user queries."
@@ -195,7 +302,11 @@
         "Where did you get the name SAM",
         "Why is your name SAM",
         "Tell me about your name SAM",
-        "How did you get the name SAM"
+        "How did you get the name SAM",
+        "Why are you called SAM",
+        "Origin of the name SAM",
+        "What does SAM stand for",
+        "Significance of the name SAM"
       ],
       "responses": [
         "I am inspired by all of the AI nowadays, and my creator is a fan of Iron Man from his college days. He imagined me as his own Jarvis, but a little less intelligent than Jarvis or Friday. As for the name Sam, SAM is the acronym of his daughter's name."
@@ -208,7 +319,11 @@
         "Why were you created",
         "Tell me your purpose",
         "What are you for",
-        "what's your purpose?"
+        "What's your purpose",
+        "Why do you exist",
+        "Role of SAM",
+        "Function of this chatbot",
+        "What can you help with"
       ],
       "responses": [
         "My purpose is to assist you with information about Pol Maynard Imbing's skills, experience, projects, and more. Feel free to ask me anything related to Pol's professional background!"
