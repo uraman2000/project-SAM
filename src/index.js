@@ -64,6 +64,21 @@ function classifyQuery(query) {
 const whitelist = process.env.CORS_WHITE_LIST.split(",") // Add your allowed origins here
 
 // Configure CORS options
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      // Allow the request if the origin is in the whitelist or if there is no origin (e.g., mobile apps, curl requests)
+      callback(null, true)
+    } else {
+      // Reject the request if the origin is not in the whitelist
+      console.log("cors")
+      callback(new Error("Not allowed by CORS"))
+    }
+  },
+}
+
+// Apply the CORS middleware to all routes
+app.use(cors(corsOptions))
 
 // Middleware to check API key
 function checkApiKey(req, res, next) {
