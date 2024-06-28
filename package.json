@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "train": "node train.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon ./src/index.js",
+    "build": "babel src -d dist"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,11 @@
     "express": "^4.19.2",
     "natural": "^1.0.1",
     "tokenize-text": "^1.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-node": "^0.0.1-security"
   }
 }
