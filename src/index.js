@@ -1,5 +1,5 @@
 const express = require("express")
-const tf = require("@tensorflow/tfjs")
+const tf = require("@tensorflow/tfjs-node")
 const fs = require("fs").promises
 const cors = require("cors")
 require("dotenv").config() // Load environment variables
@@ -9,15 +9,14 @@ const PORT = process.env.PORT || 3000
 
 let model
 async function loadModel() {
-  if (!model) {
-    try {
-      model = await tf.loadLayersModel("file://model/model.json")
-      console.log("Model loaded successfully")
-    } catch (error) {
-      console.error("Failed to load model:", error)
-    }
+  try {
+    model = await tf.loadLayersModel("file://model/model.json")
+    console.log("Model loaded successfully")
+  } catch (error) {
+    console.error("Failed to load model:", error)
   }
 }
+loadModel()
 
 // Load intents from data.json
 let intents = []
@@ -72,6 +71,7 @@ const corsOptions = {
       callback(null, true)
     } else {
       // Reject the request if the origin is not in the whitelist
+      console.log("cors")
       callback(new Error("Not allowed by CORS"))
     }
   },
@@ -107,9 +107,6 @@ app.post("/predict", checkApiKey, express.json(), async (req, res) => {
         .json({ error: "Question is required in the request body." })
     }
 
-    // Load the model if not already loaded
-    await loadModel()
-
     // Classify input query and get response (for intent-based response)
     const response = classifyQuery(question)
 
@@ -118,11 +115,6 @@ app.post("/predict", checkApiKey, express.json(), async (req, res) => {
     console.error("Prediction failed:", error)
     res.status(500).json({ error: "Prediction failed" })
   }
-})
-
-// Add /get test endpoint
-app.get("/get", (req, res) => {
-  res.send("Test endpoint is working!")
 })
 
 // Start the server
