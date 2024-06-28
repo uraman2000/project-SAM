@@ -116,7 +116,9 @@ app.post("/predict", checkApiKey, express.json(), async (req, res) => {
     res.status(500).json({ error: "Prediction failed" })
   }
 })
-
+app.get("/get", (req, res) => {
+  res.send("Test endpoint is working!")
+})
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`)
